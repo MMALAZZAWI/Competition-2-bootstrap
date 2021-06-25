@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+</head>
+
+<body>
+    <!--Header of Page Start-->
+    <header>
+        <!--Part 1-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4 d-flex justify-content-first">
+                    <form class="d-flex">
+                        <label class="mt-2"><i class="fas fa-search"></i></label>
+                        <input class="search form-control mr-3 border-0" type="search" placeholder="Search"
+                            aria-label="Search">
+                    </form>
+                </div>
+                <div class="col-md-12 col-lg-4 d-flex justify-content-center">
+                    <h5 class="hdpar p-2">Mohammed M. Al Azzawi</h5>
+                </div>
+                <div class="col-md-12 col-lg-4 d-flex justify-content-end">
+                    <ul class="nav navbar-expand-lg ">
+                        <li class="nav-item ml-n3">
+                            <a class="nav-link active text-muted" href="#"><i class="fas fa-user user"></i></a>
+                        </li>
+                        <li class="nav-item ml-n3">
+                            <a class="nav-link text-muted" href="#"><i class="far fa-heart heart "></i></a>
+                        </li>
+                        <li class="nav-item ml-n3 position-relative ">
+                            <a class="nav-link text-muted" href="#"><i class="fas fa-shopping-cart cart"></i>
+                                <span class="badge rounded-circle p-2 position-absolute"> 2 </span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--part 2-->
+        <div class="d-flex justify-content-first p-2 bg-light">
+            <nav class="container navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarScroll">
+                    <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Home.html" style="color: rgb(116, 14, 189);">HOME</a>
+                        </li>
+                        <i class="d-flex align-items-center">/</i>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop_single.html" style="color: rgb(116, 14, 189);">CART</a>
+                        </li>
+                        <i class="d-flex align-items-center">/</i>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold" href="checkout.html">Checkout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--Header of Page End-->
+
+    <div class="container">
+        <!--Section Login Start-->
+        <div class="row">
+            <div class="d-flex align-items-center col-lg-12 mt-5 border">
+                <p class="p-4 text-muted mb-0">Returning Customer? <a href="#" class="text-decoration-none"
+                        style="color: rgb(116, 14, 189);">Click Here</a> to login</p>
+            </div>
+        </div>
+        <!--Section Login End-->
+
+        <!--Section Checkout Start-->
+        <div class="row">
+            <!--Section Billing Details Start-->
+            <div class="col-md-6 mt-5">
+                <h4>Billing Details</h4>
+                <div class="border p-5 mt-4">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Country <span class="text-danger">*</span></label>
+                        <select class="form-control ml-0" id="exampleFormControlSelect1" required>
+                            <option>Select a Country</option>
+                            <option>Iraq</option>
+                            <option>Egypt</option>
+                            <option>Jordan</option>
+                            <option>U.S.A</option>
+                            <option>U.A.E</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputFName">First Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control ml-0" id="inputFName" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputLName">Last Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control ml-0" id="inputLName">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputCN">Company Name</label>
+                        <input type="text" class="form-control ml-0" id="inputCN">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Address <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control ml-0" id="inputAddress" placeholder="Street Address"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control ml-0" id="inputAddress"
+                            placeholder="Apartment, Suit, until etc (Optional)">
+                    </div>
+                    <div class="form-row justify-content-between">
+                        <div class="form-group col-md-6">
+                            <label for="inputState">State / Country <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control ml-0" id="inputState" required>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="inputZip">Posta / Zip <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control ml-0" id="inputZip" required>
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-between">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail">Email Address <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control ml-0" id="inputEmail" required>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="inputPhone">Phone <span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control ml-0" id="inputPhone" required>
+                        </div>
+                        <div class="d-block">
+                            <div class="form-check mt-4 ml-1">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridCheck1">
+                                    Create an Account?
+                                </label>
+                            </div>
+                            <div class="form-check mt-3 ml-1">
+                                <input class="form-check-input" type="checkbox" id="gridCheck2">
+                                <label class="form-check-label" for="gridCheck2">
+                                    Ship To A Different Address?
+                                </label>
+                            </div>
+                            <div class="form-group mt-4">
+                                <label for="OrderNotes">Order Notes</label>
+                                <textarea class="form-control ml-0 col-md-12" id="OrderNotes" rows="6" cols="90"
+                                    placeholder="Write Your Notes Here"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--Section Billing Details End-->
+
+            <!--Section Coupon Code Start-->
+            <div class="col-md-6 mt-5">
+                <h4>Coupon Code</h4>
+                <div class="border col-md-12 mt-4 p-5">
+                    <p>Enter Your Coupon Code If You Have One</p>
+                    <div class="rounded d-flex border sub">
+                        <input type="text" class="form-control-plaintext ml-0 p-2 col-8" id="Couponcode"
+                            placeholder="Coupon Code">
+                        <button type="button" class="btn ml-4 px-3" data-toggle="button"
+                            style="background-color: rgb(116, 14, 189); color: whitesmoke">
+                            Apply
+                        </button>
+                    </div>
+                </div>
+
+                <h4 class="mt-4">Your Order</h4>
+                <div class="border col-md-12 mt-4 p-5">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="border-top-0 p-3">Product</th>
+                                <th scope="col" class="border-top-0 p-3">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="p-3">Top Up T-Shirt x 1</td>
+                                <td class="p-3">$250.00</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3">Polo Shirt</td>
+                                <td class="p-3">$100.00</td>
+                            </tr>
+                            <tr>
+                                <th class="p-3">Cart Subtotal</th>
+                                <td class="p-3">$350.00</td>
+                            </tr>
+                            <tr>
+                                <th class="p-3">Order Total</th>
+                                <th class="p-3">$350.00</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="mt-5">
+                        <button type="button" class="btn  col-md-12 p-3 text-left"
+                            style="color: rgb(116, 14, 189);border-color: rgb(116, 14, 189);">Direct Bank
+                            Transfer</button>
+                        <button type="button" class="btn  col-md-12 p-3 mt-3 text-left"
+                            style="color: rgb(116, 14, 189);border-color: rgb(116, 14, 189);">Cheque Payment</button>
+                        <button type="button" class="btn  col-md-12 p-3 mt-3 text-left"
+                            style="color: rgb(116, 14, 189);border-color: rgb(116, 14, 189);">Paypal</button>
+                        <a href="contact.html"><button type="button"
+                            class="btn  col-md-12 p-3 mt-3 text-monospace text-uppercase hvr-grow-shadow"
+                            style="color: white;background-color: rgb(116, 14, 189);letter-spacing: 5px;">Place
+                            Order</button></a>
+                    </div>
+                </div>
+            </div>
+            <!--Section Coupon Code End-->
+        </div>
+    </div>
+    <!--Section Checkout End-->
+
+
+
+
+    <!--Section Footer Start-->
+    <footer class="border-top mt-5">
+        <div class="container">
+            <div class="row mt-3">
+                <table class="table table-borderless col-lg-6">
+                    <thead>
+                        <tr>
+                            <th scope="col">Navigations</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-muted">
+                        <tr>
+                            <td>Sell online</td>
+                            <td>Mobile commerce</td>
+                            <td>Point of sale</td>
+                        </tr>
+                        <tr>
+                            <td>Features</td>
+                            <td>Dropshipping</td>
+                            <td>Hardware</td>
+                        </tr>
+                        <tr>
+                            <td>Shopping cart</td>
+                            <td>Website developent</td>
+                            <td>Software</td>
+                        </tr>
+                        <tr>
+                            <td>Store builder</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="col-lg-3">
+                    <p class="font-weight-bold">Promo</p>
+                    <img src="/psd/hero_1.jpg" alt="hero_1.jpg" class="img-fluid">
+                    <p class="mt-4" style="color:rgb(116, 14, 189)">Finding Your Perfect Shoes<br>
+                        <span class="text-muted"> Promo from nuary 15 - 25,2019</span>
+                    </p>
+
+                </div>
+                <div class="col-lg-3">
+                    <p class="font-weight-bold">Contact Info</p>
+                    <list>
+                        <i class="fas fa-map-marker-alt mr-2 d-flex" style="color:rgb(116, 14, 189)">
+                            <p class="text-dark font-weight-light ml-2">203 Fake st. Mountain View,
+                                San Francisco, California, USA</p>
+                        </i>
+                        <i class="fas fa-phone-alt mr-2 d-flex mt-1" style="color:rgb(116, 14, 189)">
+                            <p class="text-muted font-weight-light ml-2 ">+962 795 3851 55</p>
+                        </i>
+                        <i class="fas fa-envelope fa-lg mr-2 d-flex mt-2" style="color:rgb(116, 14, 189)">
+                            <p class="text-dark font-weight-light ml-2 " style="font-size: medium;">
+                                mohamed_alazawee@yahoo.com</p>
+                        </i>
+                        <p class="font-weight-bold mt-5">Subscribe</p>
+                        <i class="rounded d-flex border sub">
+                            <input type="email" class="form-control-plaintext ml-1" id="staticEmail"
+                                placeholder="Email">
+                            <button type="button" class="btn px-4 py-2" data-toggle="button"
+                                style="background-color: rgb(116, 14, 189); color: whitesmoke">
+                                Send
+                            </button>
+                        </i>
+                    </list>
+                </div>
+            </div>
+        </div>
+        <div class="row col-12 justify-content-center">
+            <!-- Copyright -->
+            <div class="text-center text-muted p-3 mt-2">
+                Copyright ©2021 All rights reserved | This template is made with <i class="fas fa-heart"></i> By
+                <span style="color: rgb(116, 14, 189);">Mohammed M. Al-Azzawi</span>
+            </div>
+            <!-- Copyright -->
+        </div>
+    </footer>
+    <!--Section Footer End-->
+
+</body>
+
+</html>

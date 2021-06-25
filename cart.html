@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+</head>
+
+<body>
+    <!--Header of Page Start-->
+    <header>
+        <!--Part 1-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4 d-flex justify-content-first">
+                    <form class="d-flex">
+                        <label class="mt-2"><i class="fas fa-search"></i></label>
+                        <input class="search form-control mr-3 border-0" type="search" placeholder="Search"
+                            aria-label="Search">
+                    </form>
+                </div>
+                <div class="col-md-12 col-lg-4 d-flex justify-content-center">
+                    <h5 class="hdpar p-2">Mohammed M. Al Azzawi</h5>
+                </div>
+                <div class="col-md-12 col-lg-4 d-flex justify-content-end">
+                    <ul class="nav navbar-expand-lg ">
+                        <li class="nav-item ml-n3">
+                            <a class="nav-link active text-muted" href="#"><i class="fas fa-user user"></i></a>
+                        </li>
+                        <li class="nav-item ml-n3">
+                            <a class="nav-link text-muted" href="#"><i class="far fa-heart heart "></i></a>
+                        </li>
+                        <li class="nav-item ml-n3 position-relative ">
+                            <a class="nav-link text-muted" href="#"><i class="fas fa-shopping-cart cart"></i>
+                                <span class="badge rounded-circle p-2 position-absolute"> 2 </span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--part 2-->
+        <div class="d-flex justify-content-first p-2 bg-light">
+            <nav class="container navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarScroll">
+                    <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Home.html" style="color: rgb(116, 14, 189);">HOME</a>
+                        </li>
+                        <i class="d-flex align-items-center">/</i>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold" href="shop_single.html">CART</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--Header of Page End-->
+
+    <!--Section Items Start-->
+    <div class="container mt-5">
+        <table class="table-responsive-lg table-responsive-md table-responsive-sm table-bordered text-center col-12">
+            <thead>
+                <tr>
+                    <th scope="col" class="p-5">Image</th>
+                    <th scope="col" class="p-5">Product</th>
+                    <th scope="col" class="p-5">Price</th>
+                    <th scope="col" class="p-5">Quantity</th>
+                    <th scope="col" class="p-5">Total</th>
+                    <th scope="col" class="p-5">Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="p-4"><img src="psd/cloth_1.jpg" class="img-fluid" alt="cloth_1.jpg"></td>
+                    <th class="p-5">Top Up T-Shirts</th>
+                    <td class="p-5">$49.00</td>
+                    <td class="p-5">
+                        <div class="btn-group btn-group-toggle mt-3" data-toggle="buttons">
+                            <label class="btn btn-light border p-3" style="border-color:#66056e!important">
+                                <input type="radio" name="options" id="option1" autocomplete="on" checked> -
+                            </label>
+                            <label class="btn btn-light border ml-0 p-3 px-4">
+                                1
+                            </label>
+                            <label class="btn btn-light border p-3" style="border-color:#66056e!important">
+                                <input type="radio" name="options" id="option3" autocomplete="on"> +
+                            </label>
+                        </div>
+                    </td>
+                    <td class="p-5">$49.00</td>
+                    <td class="p-5"><a href="#" class="btn1 btn text-light btn-sm hvr-grow-shadow">x</a></td>
+                </tr>
+                <tr>
+                    <td class="p-4"><img src="psd/cloth_2.jpg" class="img-fluid" alt="cloth_2.jpg"></td>
+                    <th class="p-5">Polo Shirt</th>
+                    <td class="p-5">$49.00</td>
+                    <td class="p-5">
+                        <div class="btn-group btn-group-toggle mt-3" data-toggle="buttons">
+                            <label class="btn btn-light border p-3" style="border-color:#66056e!important">
+                                <input type="radio" name="options" id="option1" autocomplete="on" checked> -
+                            </label>
+                            <label class="btn btn-light border ml-0 p-3 px-4">
+                                1
+                            </label>
+                            <label class="btn btn-light border p-3" style="border-color:#66056e!important">
+                                <input type="radio" name="options" id="option3" autocomplete="on"> +
+                            </label>
+                        </div>
+                    </td>
+                    <td class="p-5">$49.00</td>
+                    <td class="p-5"><a href="#" class="btn1 btn text-light btn-sm hvr-grow-shadow">x</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="row justify-content-between">
+            <div class="col-lg-6">
+                <div class="d-flex justify-content-between">
+                    <a href="#" class="btn1 btn text-light btn-lg hvr-grow-shadow"
+                        style="font-size: medium; padding: 10px 80px;">UPDATE
+                        CART</a>
+                    <a href="#" class="btn2 btn btn-lg hvr-grow-shadow"
+                        style="border-color:#66056e!important; font-size: medium;">CONTINUE SHOPPING</a>
+                </div>
+                <div class="mt-5">
+                    <h4>Coupon</h4>
+                    <p class="text-muted">Enter Your coupon code if you have one.</p>
+                    <div class="d-flex justify-content-between">
+                        <input type="email" class="form-control ml-0 col-8" id="Couponcode" placeholder="Coupon code">
+                        <button type="submit" class="btn text-light hvr-grow-shadow"
+                            style="background-color: rgb(116, 14, 189);">Apply Coupon</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 p-3">
+                <div class="border-bottom">
+                    <h4 class="text-right">CART TOTALS</h4>
+                </div>
+                <div class="mt-5">
+                    <ul class="d-flex justify-content-between" style="list-style-type: none;">
+                        <li>Sub Total</li>
+                        <li>$230.00</li>
+                    </ul>
+                    <ul class="d-flex justify-content-between" style="list-style-type: none;">
+                        <li>Total</li>
+                        <li>$230.00</li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="checkout.html" class="btn1 btn text-light btn-lg text-monospace hvr-grow-shadow col-12"
+                        style="font-size: large; padding: 10px 50px;">PROCEED TO CHECKOUT</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Section Items End-->
+
+    <!--Section Footer Start-->
+    <footer class="border-top mt-5">
+        <div class="container">
+            <div class="row mt-3">
+                <table class="table table-borderless col-lg-6">
+                    <thead>
+                        <tr>
+                            <th scope="col">Navigations</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-muted">
+                        <tr>
+                            <td>Sell online</td>
+                            <td>Mobile commerce</td>
+                            <td>Point of sale</td>
+                        </tr>
+                        <tr>
+                            <td>Features</td>
+                            <td>Dropshipping</td>
+                            <td>Hardware</td>
+                        </tr>
+                        <tr>
+                            <td>Shopping cart</td>
+                            <td>Website developent</td>
+                            <td>Software</td>
+                        </tr>
+                        <tr>
+                            <td>Store builder</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="col-lg-3">
+                    <p class="font-weight-bold">Promo</p>
+                    <img src="/psd/hero_1.jpg" alt="hero_1.jpg" class="img-fluid">
+                    <p class="mt-4" style="color:rgb(116, 14, 189)">Finding Your Perfect Shoes<br>
+                        <span class="text-muted"> Promo from nuary 15 - 25,2019</span>
+                    </p>
+
+                </div>
+                <div class="col-lg-3">
+                    <p class="font-weight-bold">Contact Info</p>
+                    <list>
+                        <i class="fas fa-map-marker-alt mr-2 d-flex" style="color:rgb(116, 14, 189)">
+                            <p class="text-dark font-weight-light ml-2">203 Fake st. Mountain View,
+                                San Francisco, California, USA</p>
+                        </i>
+                        <i class="fas fa-phone-alt mr-2 d-flex mt-1" style="color:rgb(116, 14, 189)">
+                            <p class="text-muted font-weight-light ml-2 ">+962 795 3851 55</p>
+                        </i>
+                        <i class="fas fa-envelope fa-lg mr-2 d-flex mt-2" style="color:rgb(116, 14, 189)">
+                            <p class="text-dark font-weight-light ml-2 " style="font-size: medium;">
+                                mohamed_alazawee@yahoo.com</p>
+                        </i>
+                        <p class="font-weight-bold mt-5">Subscribe</p>
+                        <i class="rounded d-flex border sub">
+                            <input type="email" class="form-control-plaintext ml-1" id="staticEmail"
+                                placeholder="Email">
+                            <button type="button" class="btn px-4 py-2" data-toggle="button"
+                                style="background-color: rgb(116, 14, 189); color: whitesmoke">
+                                Send
+                            </button>
+                        </i>
+                    </list>
+                </div>
+            </div>
+        </div>
+        <div class="row col-12 justify-content-center">
+            <!-- Copyright -->
+            <div class="text-center text-muted p-3 mt-2">
+                Copyright ©2021 All rights reserved | This template is made with <i class="fas fa-heart"></i> By
+                <span style="color: rgb(116, 14, 189);">Mohammed M. Al-Azzawi</span>
+            </div>
+            <!-- Copyright -->
+        </div>
+    </footer>
+    <!--Section Footer End-->
+</body>
+
+</html>
